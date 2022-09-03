@@ -1,19 +1,23 @@
 # Tower Of Hanoi
-A full-stack (MERN) web app for the Tower of Hanoi game where players can create accounts, which will allow scores to be posted onto a leaderboard. The game was built in Unity3D and exported as a WebGL. 
+
+A full-stack (MERN) web app for the Tower of Hanoi game where players can create accounts, which will allow scores to be posted onto a leaderboard. The game was built in Unity3D and exported as a WebGL.
 
 <b>Game source code:</b> <a>https://github.com/ikevinws/TowerOfHanoi</a>
 
-<b>Website: </b> <a>https://tower-of-hanoi-kevin.herokuapp.com</a>
+<b>Website: </b> <a>https://tower-of-hanoi.up.railway.app/</a>
 
 <img width="1438" alt="screenshot" src="images/home.png">
 
 <h2>Installation</h2>
 
- Setup the project and install the packages by running
+Setup the project and install the packages by running
+
 ```bash
 npm run setup
 ```
- Run project with command
+
+Run project with command
+
 ```bash
 npm run dev
 ```
