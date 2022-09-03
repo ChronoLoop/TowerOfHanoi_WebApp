@@ -8,7 +8,7 @@ if (!IN_PROD) {
 // env
 const { DATABASE_URL, SESSION_SECRET } = process.env;
 const PORT = process.env.PORT || 5000;
-const ORIGIN = IN_PROD ? 'https://tower-of-hanoi-kevin.herokuapp.com/' : 'http://localhost:3000/';
+const ORIGIN = IN_PROD ? 'https://tower-of-hanoi.up.railway.app' : 'http://localhost:3000/';
 
 // imports
 const express = require('express');
@@ -66,7 +66,7 @@ if (IN_PROD) {
     // Serve any static files
     app.use(express.static(path.join(__dirname, '../client/build')));
     // Handle React routing, return all requests to React app
-    app.get('*', (req, res) => {
+    app.get('*', (_, res) => {
         res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
     });
 }
