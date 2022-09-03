@@ -28,7 +28,7 @@ const Home = ({ resReceived }) => {
                 <Container className="d-block my-3 p-0">
                     <Alert message={message} showAlert={showAlert} setShowAlert={setShowAlert} />
                 </Container>
-            ) : null}
+            ) : <div className="mt-5"></div>}
             <Game />
         </div>
     );
